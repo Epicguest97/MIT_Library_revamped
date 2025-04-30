@@ -1,4 +1,3 @@
-
 "use client";
 
 import * as React from "react";
@@ -236,7 +235,7 @@ export function LinkFinder() {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-green-400 underline text-base hover:text-green-300 transition-colors"
+                  className="text-green-400 text-base hover:text-green-300 transition-colors"
                 >
                   {link.name || (link.url ? new URL(link.url).pathname.split('/').pop() : '') || 'Link'}
                 </a>
