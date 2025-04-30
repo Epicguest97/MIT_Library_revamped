@@ -1,83 +1,618 @@
+
 [
   {
-    "path": [
-      "2024",
-      "Dec 2023-Jan 2024",
-      "B.Tech",
-      "III Sem",
-      "ICT",
-      "IT"
-    ],
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem"],
+    "name": "Web of Science Publication List",
+    "url": "https://libportal.manipal.edu/MIT/Publication%20List%20-%20webofscience.pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem"],
+    "name": "Policy Rules and Regulations",
+    "url": "https://libportal.manipal.edu/MIT/Policy%20Rules%20and%20Regulations.pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem"],
+    "name": "Plagiarism Check Certificate Format",
+    "url": "https://libportal.manipal.edu/MIT/MAHE%20Plagarisim%20Check%20Certificate%20format.pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Membership"],
+    "name": "Faculty Membership Form",
+    "url": "https://libportal.manipal.edu/MIT/Membership/Faculty.pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Membership"],
+    "name": "Student Membership Form",
+    "url": "https://libportal.manipal.edu/MIT/Membership/Student.pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Open Access"],
+    "name": "SOP ACS 2023",
+    "url": "https://libportal.manipal.edu/MIT/Open%20Access/SOP_ACS_2023.pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Open Access"],
+    "name": "SOP Karger 2023",
+    "url": "https://libportal.manipal.edu/MIT/Open%20Access/SOP_Karger_2023.pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Open Access"],
+    "name": "SOP Wiley 2023",
+    "url": "https://libportal.manipal.edu/MIT/Open%20Access/SOP_Wiley%20_2023.pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Open Access"],
     "name": "SOP IEEE 2023",
     "url": "https://libportal.manipal.edu/MIT/Open%20Access/SOP_IEEE_2023.pdf"
   },
   {
-    "path": [
-      "2024",
-      "Dec 2023-Jan 2024",
-      "B.Tech",
-      "III Sem",
-      "ICT",
-      "IT"
-    ],
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Open Access"],
     "name": "SOP RSC 2023",
     "url": "https://libportal.manipal.edu/MIT/Open%20Access/SOP_RSC_2023.pdf"
   },
   {
-    "path": [
-      "2024",
-      "Dec 2023-Jan 2024",
-      "B.Tech",
-      "V Sem",
-      "CSE",
-      "Core"
-    ],
-    "name": "Advanced Algo",
-    "url": "https://example.com/pdf/adv_algo.pdf"
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Open Access"],
+    "name": "SOP MAHE-Elsevier Open Access Guidelines",
+    "url": "https://libportal.manipal.edu/MIT/Open%20Access/SOP_MAHE-Elsevier%20Open%20Access%20Guidelines.pdf"
   },
-    {
-    "path": [
-      "2024",
-      "Dec 2023-Jan 2024",
-      "B.Tech",
-      "V Sem",
-      "CSE",
-      "AI/ML"
-    ],
-    "name": "ML Course",
-    "url": "https://example.com/pdf/ml_course.pdf"
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Chemical"],
+    "name": "Advanced Control Theory (CHE 5114).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/I%20Sem/Advanced%20Control%20Theory%20(CHE%205114).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Chemical"],
+    "name": "Advanced Reaction Engineering (CHE 5115).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/I%20Sem/Advanced%20Reaction%20Engineering%20(CHE%205115).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Chemical"],
+    "name": "Advanced Transport Phenomena (CHE 5116).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/I%20Sem/Advanced%20Transport%20Phenomena%20(CHE%205116).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "ECE"],
+    "name": "Basic Electronics (ECE 1071).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/I%20Sem/Basic%20Electronics%20(ECE%201071).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Mechanical", "Makeup"],
+    "name": "Basic Mechanical Engineering (MIE 1071)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/I%20Sem/Basic%20Mechanical%20Engineering%20(MIE%201071)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Mechanical"],
+    "name": "Basic Mechanical Engineering (MIE 1071).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/I%20Sem/Basic%20Mechanical%20Engineering%20(MIE%201071).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Chemical"],
+    "name": "Computational Methods in Chemical Engineering (CHE 5113).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/I%20Sem/Computational%20Methods%20in%20Chemical%20Engineering%20(CHE%205113).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Chemistry", "Makeup"],
+    "name": "Engineering Chemistry (CHM 1071) (Makeup) .pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/I%20Sem/Engineering%20Chemistry%20(CHM%201071)%20(Makeup)%20.pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Chemistry"],
+    "name": "Engineering Chemistry (CHM 1071).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/I%20Sem/Engineering%20Chemistry%20(CHM%201071).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Mathematics", "Makeup"],
+    "name": "Engineering Mathematics - 1 (MAT-1171)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/I%20Sem/Engineering%20Mathematics%20-%201%20(MAT-1171)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Mathematics"],
+    "name": "Engineering Mathematics - 1 (MAT-1171).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/I%20Sem/Engineering%20Mathematics%20-%201%20(MAT-1171).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Mathematics", "Chemistry Cycle"],
+    "name": "Engineering Mathematics -I (MAT 1171)Chemistry Cycle.pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/I%20Sem/Engineering%20Mathematics%20-I%20(MAT%201171)Chemistry%20%20Cycle.pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Mathematics", "Physics Cycle"],
+    "name": "Engineering Mathematics -I (MAT 1171)Physics Cycle.pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/I%20Sem/Engineering%20Mathematics%20-I%20(MAT%201171)Physics%20Cycle.pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Physics", "Makeup"],
+    "name": "Engineering Physics (PHY 1071) (Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/I%20Sem/Enginnering%20Physics%20(PHY%201071)%20(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Physics"],
+    "name": "Engineering Physics (PHY 1071).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/I%20Sem/Enginnering%20Physics%20(PHY%201071).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Civil"],
+    "name": "Environmental Studies (CIE 1072).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/I%20Sem/Enviornmental%20Studies%20(CIE%201072).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Civil"],
+    "name": "Mechanics of Solids (CIE 1071).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/I%20Sem/Mechanics%20of%20Solids%20(CIE%201071).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "I Sem", "Chemical"],
+    "name": "Process Design of Chemical Engineering (CHE 5117).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/I%20Sem/Process%20Deisgn%20of%20Chemical%20Engineering%20(CHE%205117).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Aeronautical", "Mathematics", "Makeup"],
+    "name": "Engineering Mathematics -III (MAT 2124)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Aeronautical/Engineering%20Mathematics%20-III%20(MAT%202124)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Aeronautical", "Mathematics"],
+    "name": "Engineering Mathematics III (MAT 2121).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Aeronautical/Engineering%20Mathematics%20III%20(MAT%202121).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Automobile", "Mathematics", "Makeup"],
+    "name": "Engineering Mathematics -III (MAT 2124)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Automobile/Engineering%20Mathematics%20-III%20(MAT%202124)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Automobile", "Mathematics"],
+    "name": "Engineering Mathematics III (MAT 2121).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Automobile/Engineering%20Mathematics%20III%20(MAT%202121).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Biomedical", "Makeup"],
+    "name": "Anatomy and Physiology (BME 2121)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Biomedical/Anatomy%20and%20Physiology%20(BME%202121)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Biomedical"],
+    "name": "Anatomy and Physiology (BME 2121).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Biomedical/Anatomy%20and%20Physiology%20(BME%202121).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Biomedical", "Makeup"],
+    "name": "Digital System Design (BME 2123)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Biomedical/Digital%20System%20Design%20(BME%202123)(Makeup).pdf"
   },
    {
-    "path": [
-      "2024",
-      "June 2024-July 2024",
-      "M.Tech",
-      "I Sem",
-      "ECE"
-    ],
-    "name": "Digital Comm",
-    "url": "https://example.com/pdf/dig_comm.pdf"
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Biomedical"],
+    "name": "Digital System Design (BME 2123).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Biomedical/Digital%20System%20Design%20(BME%202123).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Biomedical", "Makeup"],
+    "name": "Electronics Circuit (BME 2122)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Biomedical/Electronics%20Circuit%20(BME%202122)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Biomedical"],
+    "name": "Electronics Circuits (BME 2122).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Biomedical/Electronics%20Circuits%20(BME%202122).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Biomedical", "Mathematics", "Makeup"],
+    "name": "Engineering Mathematics -III (MAT 2124)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Biomedical/Engineering%20Mathematics%20-III%20(MAT%202124)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Biomedical", "Mathematics"],
+    "name": "Engineering Mathematics -III (MAT 2124).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Biomedical/Engineering%20Mathematics%20-III%20(MAT%202124).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Biomedical", "Makeup"],
+    "name": "Network Analysis (BME 2124)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Biomedical/Network%20Analysis%20(BME%202124)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Biomedical"],
+    "name": "Network Analysis (BME 2124).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Biomedical/Network%20Analysis%20(BME%202124).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Biomedical", "Makeup"],
+    "name": "Signals and Systems (BME 2125)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Biomedical/Signals%20and%20Systems%20(BME%202125)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Biomedical"],
+    "name": "Signals and Systems (BME 2125).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Biomedical/Signals%20and%20Systems%20(BME%202125).pdf"
   },
    {
-    "path": [
-      "2023",
-      "Dec 2022-Jan 2023",
-      "B.Tech",
-      "I Sem",
-      "Common"
-    ],
-    "name": "Physics Cycle",
-    "url": "https://example.com/pdf/physics.pdf"
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Biotechnology"],
+    "name": "Biochemistry (BIO 2121).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Biotechnology/Biochemistry%20(BIO%202121).pdf"
   },
-    {
-    "path": [
-      "2023",
-      "Dec 2022-Jan 2023",
-      "B.Tech",
-      "I Sem",
-      "Common"
-    ],
-    "name": "Chemistry Cycle",
-    "url": "https://example.com/pdf/chemistry.pdf"
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Biotechnology", "Makeup"],
+    "name": "Bioprocess Calculations ( BIO 2125)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Biotechnology/Bioprocess%20Calculations%20(%20BIO%202125)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Biotechnology"],
+    "name": "Bioprocess Calculations ( BIO 2125).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Biotechnology/Bioprocess%20Calculations%20(%20BIO%202125).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Biotechnology", "Makeup"],
+    "name": "Fluid Flow Operations (BIO 2124)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Biotechnology/Fulid%20Flow%20Operations%20(BIO%202124)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Biotechnology"],
+    "name": "Fluid Flow Operations (BIO 2124).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Biotechnology/Fulid%20Flow%20Operations%20(BIO%202124).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Biotechnology"],
+    "name": "Industrial Microbiology (BIO 2122).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Biotechnology/Industrail%20Microbiology%20(BIO%202122).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Chemical"],
+    "name": "Chemical Engineering Thermodynamics (CHE 2121).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Chemical/Chemical%20Engineering%20Thermodynamics%20(CHE%202121).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Chemical"],
+    "name": "Chemical Process Calculations (CHE 2122).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Chemical/Chemical%20Process%20Calculations%20(CHE%202122).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Chemical", "Mathematics", "Makeup"],
+    "name": "Engineering Mathematics -III (MAT 2124)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Chemical/Engineering%20Mathematics%20-III%20(MAT%202124)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Chemical", "Mathematics"],
+    "name": "Engineering Mathematics -III (MAT 2124).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Chemical/Engineering%20Mathematics%20-III%20(MAT%202124).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Chemical"],
+    "name": "Momentum Transfer (CHE 2123).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Chemical/Momentum%20Transfer%20(CHE%202123).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Chemical", "Chemistry", "Makeup"],
+    "name": "Physical and Organic Chemistry (CHM 2121)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Chemical/Physical%20and%20Organic%20Chemistry%20(CHM%202121)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Chemical", "Chemistry"],
+    "name": "Physical and Organic Chemistry (CHM 2121).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Chemical/Physical%20and%20Organic%20Chemistry%20(CHM%202121).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Civil"],
+    "name": "Building Materials (CIE 2123).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Civil/Building%20Materials%20(CIE%202123).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Civil", "Mathematics", "Makeup"],
+    "name": "Engineering Mathematics (MAT 2125)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Civil/Engineering%20Mathematics%20(MAT%202125)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Civil", "Mathematics"],
+    "name": "Engineering Mathematics (MAT 2125).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Civil/Engineering%20Mathematics%20(MAT%202125).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Civil", "Makeup"],
+    "name": "Fluid Mechanics (CIE 2121)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Civil/Fluid%20Mechanics%20(CIE%202121)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Civil"],
+    "name": "Fluid Mechanics (CIE 2121).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Civil/Fluid%20Mechanics%20(CIE%202121).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Civil"],
+    "name": "Mechanics of Structure (CIE 2124).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Civil/Mechanics%20of%20Structure%20(CIE%202124).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Civil"],
+    "name": "Surveying (CIE 2122).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Civil/Surveying%20(CIE%202122).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Civil"],
+    "name": "Water Supply Engineering (CIE 2125).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Civil/Water%20Supply%20Engineering%20(CIE%202125).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Computer Science", "AIML", "Makeup"],
+    "name": "Formal Languages and Automation Theory (CSE-2254)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Computer%20Science/AIML/Formal%20Langauages%20and%20Automation%20Theory%20(CSE-2254)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Computer Science", "AIML"],
+    "name": "Formal Languages and Automation Theory (CSE-2254).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Computer%20Science/AIML/Formal%20Langauages%20and%20Automation%20Theory%20(CSE-2254).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Computer Science", "AIML"],
+    "name": "Introduction to Data Analytics (CSE-2126)(M).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Computer%20Science/AIML/Introduction%20to%20Data%20Analytics%20(CSE-2126)(M).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Computer Science", "AIML", "Makeup"],
+    "name": "Introduction to Data Analytics (CSE-2126)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Computer%20Science/AIML/Introduction%20to%20Data%20Analytics%20(CSE-2126)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Computer Science", "AIML"],
+    "name": "Introduction to Data Analytics (CSE-2126).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Computer%20Science/AIML/Introduction%20to%20Data%20Analytics%20(CSE-2126).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Computer Science", "CSE"],
+    "name": "Computer Organization and Architecture (CSE 2121) (2).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Computer%20Science/CSE/Computer%20Organization%20and%20Architecture%20(CSE%202121)%20(2).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Computer Science", "CSE", "Makeup"],
+    "name": "Computer Organization and Architecture (CSE 2121) (Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Computer%20Science/CSE/Computer%20Organization%20and%20Architecture%20(CSE%202121)%20(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Computer Science", "CSE"],
+    "name": "Computer Organization and Architecture (CSE 2121).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Computer%20Science/CSE/Computer%20Organization%20and%20Architecture%20(CSE%202121).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Computer Science", "CSE", "Makeup"],
+    "name": "Computer Organization and Architecture (CSE 2121)Makeup.pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Computer%20Science/CSE/Computer%20Organization%20and%20Architecture%20(CSE%202121)Makeup.pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Computer Science", "CSE"],
+    "name": "Data Structures (CSE 2122) (2).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Computer%20Science/CSE/Data%20Structures%20(CSE%202122)%20(2).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Computer Science", "CSE", "Makeup"],
+    "name": "Data Structures (CSE 2122)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Computer%20Science/CSE/Data%20Structures%20(CSE%202122)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Computer Science", "CSE"],
+    "name": "Data Structures (CSE 2122).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Computer%20Science/CSE/Data%20Structures%20(CSE%202122).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Computer Science", "CSE", "Makeup"],
+    "name": "Data Structures(CSE 2122)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Computer%20Science/CSE/Data%20Structures(CSE%202122)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Computer Science", "CSE", "Makeup"],
+    "name": "Digital system Design (CSE 2123)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Computer%20Science/CSE/Digital%20system%20Deisgn%20(CSE%202123)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Computer Science", "CSE"],
+    "name": "Digital system Design (CSE 2123).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Computer%20Science/CSE/Digital%20system%20Deisgn%20(CSE%202123).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Computer Science", "CSE", "Makeup"],
+    "name": "Digital System Design (CSE 2123)( Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Computer%20Science/CSE/Digital%20System%20Design%20(CSE%202123)(%20Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Computer Science", "CSE"],
+    "name": "Digital system Design (CSE 2123).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Computer%20Science/CSE/Digital%20system%20Design%20(CSE%202123).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Computer Science", "CSE", "Makeup"],
+    "name": "Object Oriented Programming (CSE 2124)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Computer%20Science/CSE/Object%20Oriented%20Programing%20(CSE%202124)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Computer Science", "CSE"],
+    "name": "Object Oriented Programming (CSE 2124).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Computer%20Science/CSE/Object%20Oriented%20Programing%20(CSE%202124).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Data Science", "Mathematics", "Makeup"],
+    "name": "Mathematical Foundation for Data Science (MAT 3151)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Data%20Science/Mathematical%20Foundation%20for%20Data%20Science%20(MAT%203151)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Data Science", "Mathematics"],
+    "name": "Mathematical Foundation for Data Science (MAT 3151).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Data%20Science/Mathematical%20Foundation%20for%20Data%20Science%20(MAT%203151).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "E and E"],
+    "name": "Digital System Design (ELE 2122).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/E%20and%20E/Digital%20System%20Deisgn%20(ELE%202122).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "E and E"],
+    "name": "Electrical Machinery (ELE 2123).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/E%20and%20E/Electrical%20Machinery%20(ELE%202123).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "E and E"],
+    "name": "Electromagnetic Field Theory (ELE 2124).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/E%20and%20E/Electromagnetic%20Field%20Theory%20(ELE%202124).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "E and E"],
+    "name": "Microcontrollers (ELE 2125).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/E%20and%20E/Microcontrollers%20(ELE%202125).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ECE"],
+    "name": "Analog Electronic Circuit (ECE 2121).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ECE/Analog%20Electrnic%20Circuit%20(ECE%202121).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ECE"],
+    "name": "Digital Systems Design (ECE 2124).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ECE/Digital%20Systems%20Design%20(ECE%202124).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ECE"],
+    "name": "Electromagnetic Waves (ECE 2125).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ECE/Electromagnetic%20Waves%20(ECE%202125).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ECE"],
+    "name": "Network Analysis (ECE 2122).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ECE/Network%20Analysis%20(ECE%202122).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ECE"],
+    "name": "Signals and Systems (ECE 2123).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ECE/Signals%20and%20Systems%20(ECE%202123).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ICT", "CCE", "Makeup"],
+    "name": "Data Structures (ICT 2121)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ICT/CCE/Data%20Structures%20(ICT%202121)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ICT", "CCE"],
+    "name": "Data Structures (ICT 2121).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ICT/CCE/Data%20Structures%20(ICT%202121).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ICT", "CCE", "Makeup"],
+    "name": "Digital Systems and Computer Organization (ICT 2123)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ICT/CCE/Digital%20Systems%20and%20Computer%20Organization%20(ICT%202123)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ICT", "CCE"],
+    "name": "Digital Systems and Computer Organization (ICT 2123).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ICT/CCE/Digital%20Systems%20and%20Computer%20Organization%20(ICT%202123).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ICT", "CCE", "Makeup"],
+    "name": "Object Oriented Programming (ICT 2122)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ICT/CCE/Object%20Oriented%20Progrming%20(ICT%202122)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ICT", "CCE"],
+    "name": "Object Oriented Programming (ICT 2122).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ICT/CCE/Object%20Oriented%20Progrming%20(ICT%202122).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ICT", "CCE", "Makeup"],
+    "name": "Principles of Data Communication (ICT 2124)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ICT/CCE/Principles%20of%20Data%20Communication%20(ICT%202124)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ICT", "CCE"],
+    "name": "Principles of Data Communication (ICT 2124).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ICT/CCE/Principles%20of%20Data%20Communication%20(ICT%202124).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ICT", "IT", "Makeup"],
+    "name": "Data Structures (ICT 2121) (Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ICT/IT/Data%20Structures%20(ICT%202121)%20(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ICT", "IT"],
+    "name": "Data Structures (ICT 2121).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ICT/IT/Data%20Structures%20(ICT%202121).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ICT", "IT", "Makeup"],
+    "name": "Digital Systems and Computer Organization (ICT 2123)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ICT/IT/Digital%20Systems%20and%20Computer%20Organization%20(ICT%202123)(Makjeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ICT", "IT"],
+    "name": "Digital Systems and Computer Organization (ICT 2123).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ICT/IT/Digital%20Systems%20and%20Computer%20Prganization%20(ICT%202123).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ICT", "IT"],
+    "name": "Object Oriented Programming ( ICT 2122).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ICT/IT/Object%20Oriented%20Programing%20(%20ICT%202122).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ICT", "IT", "Makeup"],
+    "name": "Object Oriented Programming (ICT 2122)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ICT/IT/Object%20Oriented%20Programing%20(ICT%202122)(Makeup).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ICT", "IT", "Makeup"],
+    "name": "Principles of Data Communication (ICT 2124) (Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ICT/IT/Principles%20of%20Data%20Communication%20(ICT%202124)%20(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "ICT", "IT"],
+    "name": "Principles of Data Communication (ICT 2124).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/ICT/IT/Principles%20of%20Data%20Communication%20(ICT%202124).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Industrial Production", "Makeup"],
+    "name": "3D Printing and Design (MIE 2129)(Makeup) .pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Industrial%20Production/3D%20Printing%20and%20Design%20(MIE%202129)(Makeup)%20.pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Industrial Production"],
+    "name": "3D Printing and Design (MIE 2129).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Industrial%20Production/3D%20Printing%20and%20Design%20(MIE%202129).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Industrial Production"],
+    "name": "Control system Engineering (MIE 2128).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Industrial%20Production/Control%20system%20Engineering%20(MIE%202128).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Industrial Production", "Makeup"],
+    "name": "Control Systems and Engineering (MIE 2128)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Industrial%20Production/Control%20Systems%20and%20Engineering%20(MIE%202128)(Makeup).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Industrial Production", "Makeup"],
+    "name": "Data Analytics and Visualization (MIE 2127)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Industrial%20Production/Data%20Analytics%20and%20Visualization%20(MIE%202127)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Industrial Production"],
+    "name": "Data Analytics and Visualization (MIE 2127).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Industrial%20Production/Data%20Analytics%20and%20Visualization%20(MIE%202127).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Industrial Production"],
+    "name": "Industrial Automation and Robotics (MIE 2130).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Industrial%20Production/Industrail%20Automation%20and%20Robotics%20(MIE%202130).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Industrial Production", "Makeup"],
+    "name": "Industrial Internet of Things (MIE 2126)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Industrial%20Production/Industrial%20Internet%20of%20Things%20(MIE%202126)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Industrial Production"],
+    "name": "Industrial Internet of Things (MIE 2126).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Industrial%20Production/Industrial%20Internet%20of%20Things%20(MIE%202126).pdf"
+  },
+   {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Industrial Production", "Makeup"],
+    "name": "Simulation Modeling and Analysis (MIE 2157)(Makeup).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Industrial%20Production/Simulation%20Modeling%20and%20Analysis%20(MIE%202157)(Makeup).pdf"
+  },
+  {
+    "path": ["2024", "Dec 2023-Jan 2024", "B.Tech", "III Sem", "Industrial Production"],
+    "name": "Simulation Modeling and Analysis (MIE 2157).pdf",
+    "url": "https://libportal.manipal.edu/RootFolder/2024/Dec%202023-Jan%202024/B.Tech/III%20Sem/Industrial%20Production/Simulation%20Modeling%20and%20Analysis%20(MIE%202157).pdf"
   }
 ]

@@ -3,7 +3,7 @@
 
 import * as React from "react";
 import type { LinkData } from "@/types";
-import { getLinksData, getUniquePathValues, filterLinks, getMaxPathDepth, getPathLevelLabel } from "@/lib/data";
+import { getUniquePathValues, filterLinks, getMaxPathDepth, getPathLevelLabel, ALL_LINKS_DATA } from "@/lib/data"; // Import ALL_LINKS_DATA
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -12,55 +12,82 @@ import { List, Link as LinkIcon } from "lucide-react";
 const ALL_VALUE = "__ALL__"; // Use a constant for the special value
 
 export function LinkFinder() {
-  const [links, setLinks] = React.useState<LinkData[]>([]);
-  const [maxDepth, setMaxDepth] = React.useState<number>(0);
-  const [selectedPath, setSelectedPath] = React.useState<string[]>([]);
-  const [filteredLinks, setFilteredLinks] = React.useState<LinkData[]>([]);
+  // Directly use the imported data
+  const links = React.useMemo(() => ALL_LINKS_DATA, []);
+  const maxDepth = React.useMemo(() => getMaxPathDepth(links), [links]);
+  const [selectedPath, setSelectedPath] = React.useState<string[]>(() => Array(maxDepth).fill("")); // Initialize selectedPath based on calculated maxDepth
+  const [filteredLinks, setFilteredLinks] = React.useState<LinkData[]>(links); // Initialize with all links
   const [dropdownOptions, setDropdownOptions] = React.useState<string[][]>([]);
+  const [levelLabels, setLevelLabels] = React.useState<string[]>([]);
 
-  React.useEffect(() => {
-    const data = getLinksData();
-    setLinks(data);
-    const depth = getMaxPathDepth(data);
-    setMaxDepth(depth);
-    setSelectedPath(Array(depth).fill("")); // Initialize selectedPath with empty strings
-    setFilteredLinks(data); // Initially show all links
-  }, []);
 
+  // Effect to calculate initial dropdown options and labels
+   React.useEffect(() => {
+    if (links.length > 0 && maxDepth > 0) {
+      const initialOptions: string[][] = [];
+      const initialLabels: string[] = [];
+      for (let i = 0; i < maxDepth; i++) {
+        initialOptions[i] = getUniquePathValues(links, i, []); // Initial options based on all links
+        initialLabels[i] = getPathLevelLabel(i, links);
+      }
+      setDropdownOptions(initialOptions);
+      setLevelLabels(initialLabels);
+      setSelectedPath(Array(maxDepth).fill("")); // Ensure selected path is reset based on actual maxDepth
+      setFilteredLinks(links); // Reset filtered links to all
+    }
+   }, [links, maxDepth]); // Depend on links and maxDepth
+
+  // Effect to update dropdown options and filtered links when selectedPath changes
   React.useEffect(() => {
     const newOptions: string[][] = [];
+    const currentSelectedForFiltering = selectedPath.slice(0, maxDepth).map(p => p === ALL_VALUE ? "" : p); // Prepare path for filtering
+
     for (let i = 0; i < maxDepth; i++) {
-      newOptions[i] = getUniquePathValues(links, i, selectedPath);
+      // Pass the *current* selected path up to the *previous* level to get relevant options
+      const relevantPathForOptions = currentSelectedForFiltering.slice(0, i);
+      newOptions[i] = getUniquePathValues(links, i, relevantPathForOptions);
     }
     setDropdownOptions(newOptions);
 
-    // Filter links based on the current selectedPath
-    const currentlySelected = selectedPath.filter(p => p !== "");
-    if (currentlySelected.length > 0) {
-      setFilteredLinks(filterLinks(links, currentlySelected));
-    } else {
-      setFilteredLinks(links); // Show all if no selection
-    }
+    // Filter links based on the *current* selectedPath (excluding __ALL__)
+     const activeFilters = currentSelectedForFiltering.filter(p => p !== "");
+     if (activeFilters.length > 0) {
+       setFilteredLinks(filterLinks(links, currentSelectedForFiltering));
+     } else {
+       setFilteredLinks(links); // Show all if no real selection
+     }
 
-  }, [selectedPath, links, maxDepth]);
+  }, [selectedPath, links, maxDepth]); // Depend on selectedPath, links, and maxDepth
 
 
   const handleSelectChange = (level: number, value: string) => {
     setSelectedPath(prevPath => {
       const newPath = [...prevPath];
-      // Map __ALL__ back to empty string for filtering logic
+       // Map __ALL__ back to empty string for internal state consistency
       const actualValue = value === ALL_VALUE ? "" : value;
-      // Reset subsequent levels when a level is changed
-      for (let i = level; i < newPath.length; i++) {
-        newPath[i] = (i === level) ? actualValue : ""; // Set current level, clear subsequent
+       // Reset subsequent levels when a level is changed
+      for (let i = 0; i < maxDepth; i++) {
+        if (i === level) {
+          newPath[i] = actualValue; // Set current level
+        } else if (i > level) {
+          newPath[i] = ""; // Clear subsequent levels
+        }
       }
-      return newPath;
+      // Ensure the array length matches maxDepth, padding with "" if needed
+       while (newPath.length < maxDepth) {
+           newPath.push("");
+       }
+      return newPath.slice(0, maxDepth); // Trim to maxDepth just in case
     });
   };
+
 
   const handleReset = () => {
     setSelectedPath(Array(maxDepth).fill(""));
   }
+
+   // Function to safely get a label, falling back if labels aren't loaded yet
+   const getLabel = (level: number) => levelLabels[level] || `Level ${level + 1}`;
 
   return (
     <div className="container mx-auto p-4 md:p-8 max-w-3xl">
@@ -73,37 +100,43 @@ export function LinkFinder() {
         </CardHeader>
         <CardContent className="p-6 space-y-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {Array.from({ length: maxDepth }).map((_, level) => (
-              dropdownOptions[level]?.length > 0 && ( // Only render dropdown if options exist for this level based on current path
-                <div key={level} className="space-y-1">
-                   <label htmlFor={`select-${level}`} className="text-sm font-medium text-muted-foreground">
-                    {getPathLevelLabel(level)}
-                  </label>
-                  <Select
-                    // Map empty string state back to __ALL__ for display in SelectTrigger
-                    value={selectedPath[level] === "" ? ALL_VALUE : selectedPath[level]}
-                    onValueChange={(value) => handleSelectChange(level, value)}
-                    // Disable dropdown if the previous level hasn't been selected (and it's not the first level)
-                    disabled={level > 0 && !selectedPath[level - 1] && selectedPath[level - 1] !== ""}
-                  >
-                    <SelectTrigger id={`select-${level}`} className="w-full bg-input rounded-md shadow-sm">
-                      {/* The placeholder will show if the value passed to Select is not found in SelectItem */}
-                      {/* So, when value is __ALL__, it matches the "All" item. When it's a real path, it matches that. */}
-                      <SelectValue placeholder={`Select ${getPathLevelLabel(level)}...`} />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {/* Use the non-empty value for the "All" item */}
-                      <SelectItem value={ALL_VALUE}>All</SelectItem>
-                      {dropdownOptions[level]?.map((option) => (
-                        <SelectItem key={option} value={option}>
-                          {option}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </div>
-              )
-            ))}
+             {/* Render dropdowns based on maxDepth */}
+             {Array.from({ length: maxDepth }).map((_, level) => {
+               const currentOptions = dropdownOptions[level] || []; // Default to empty array if options not ready
+               const hasOptions = currentOptions.length > 0;
+                // Determine if the dropdown should be enabled
+               const isEnabled = level === 0 || (selectedPath[level - 1] !== "" && selectedPath[level - 1] !== undefined);
+
+               // Only render if the level is the first OR the previous level was selected OR if it has options (to show 'All')
+               if (level === 0 || isEnabled || hasOptions) {
+                 return (
+                   <div key={level} className="space-y-1">
+                     <label htmlFor={`select-${level}`} className="text-sm font-medium text-muted-foreground">
+                       {getLabel(level)} {/* Use dynamic label */}
+                     </label>
+                     <Select
+                       value={selectedPath[level] || ALL_VALUE} // Use ALL_VALUE if current level is empty
+                       onValueChange={(value) => handleSelectChange(level, value)}
+                       disabled={!isEnabled && level > 0} // Disable if previous level not selected (and not first level)
+                     >
+                       <SelectTrigger id={`select-${level}`} className="w-full bg-input rounded-md shadow-sm">
+                         <SelectValue placeholder={`Select ${getLabel(level)}...`} />
+                       </SelectTrigger>
+                       <SelectContent>
+                         <SelectItem value={ALL_VALUE}>All</SelectItem>
+                         {/* Only map options if they exist */}
+                         {currentOptions.map((option) => (
+                           <SelectItem key={option} value={option}>
+                             {option}
+                           </SelectItem>
+                         ))}
+                       </SelectContent>
+                     </Select>
+                   </div>
+                 );
+               }
+               return null; // Don't render the dropdown if conditions aren't met
+             })}
           </div>
            <Button onClick={handleReset} variant="outline" className="w-full sm:w-auto">Reset Filters</Button>
 
@@ -123,11 +156,15 @@ export function LinkFinder() {
                       className="flex items-center gap-2 text-primary hover:underline font-medium group"
                     >
                       <LinkIcon size={16} className="text-accent group-hover:text-primary transition-colors duration-200" />
-                      {link.name || new URL(link.url).pathname.split('/').pop() || 'Link'}
+                      {/* Display name if available, otherwise extract filename or default to 'Link' */}
+                      {link.name || (link.url ? new URL(link.url).pathname.split('/').pop() : '') || 'Link'}
                     </a>
-                    <p className="text-xs text-muted-foreground mt-1">
-                      {link.path.join(' / ')}
-                    </p>
+                     {/* Conditionally render path if it exists and has elements */}
+                    {link.path && link.path.length > 0 && (
+                        <p className="text-xs text-muted-foreground mt-1">
+                        {link.path.join(' / ')}
+                        </p>
+                    )}
                   </li>
                 ))}
               </ul>
