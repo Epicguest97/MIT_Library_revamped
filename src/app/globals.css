@@ -4,6 +4,11 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: #000 !important;
+}
+
+:root {
+  --background: 0 0% 0%; /* Force black for background */
 }
 
 @layer base {
