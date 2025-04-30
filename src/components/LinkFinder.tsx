@@ -1,3 +1,4 @@
+
 "use client";
 
 import * as React from "react";
@@ -7,6 +8,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { List, Link as LinkIcon } from "lucide-react";
+
+const ALL_VALUE = "__ALL__"; // Use a constant for the special value
 
 export function LinkFinder() {
   const [links, setLinks] = React.useState<LinkData[]>([]);
@@ -45,9 +48,11 @@ export function LinkFinder() {
   const handleSelectChange = (level: number, value: string) => {
     setSelectedPath(prevPath => {
       const newPath = [...prevPath];
+      // Map __ALL__ back to empty string for filtering logic
+      const actualValue = value === ALL_VALUE ? "" : value;
       // Reset subsequent levels when a level is changed
       for (let i = level; i < newPath.length; i++) {
-        newPath[i] = (i === level) ? value : ""; // Set current level, clear subsequent
+        newPath[i] = (i === level) ? actualValue : ""; // Set current level, clear subsequent
       }
       return newPath;
     });
@@ -75,15 +80,20 @@ export function LinkFinder() {
                     {getPathLevelLabel(level)}
                   </label>
                   <Select
-                    value={selectedPath[level] || ""}
+                    // Map empty string state back to __ALL__ for display in SelectTrigger
+                    value={selectedPath[level] === "" ? ALL_VALUE : selectedPath[level]}
                     onValueChange={(value) => handleSelectChange(level, value)}
-                    disabled={level > 0 && !selectedPath[level - 1]} // Disable if previous level not selected
+                    // Disable dropdown if the previous level hasn't been selected (and it's not the first level)
+                    disabled={level > 0 && !selectedPath[level - 1] && selectedPath[level - 1] !== ""}
                   >
                     <SelectTrigger id={`select-${level}`} className="w-full bg-input rounded-md shadow-sm">
+                      {/* The placeholder will show if the value passed to Select is not found in SelectItem */}
+                      {/* So, when value is __ALL__, it matches the "All" item. When it's a real path, it matches that. */}
                       <SelectValue placeholder={`Select ${getPathLevelLabel(level)}...`} />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="">All</SelectItem>
+                      {/* Use the non-empty value for the "All" item */}
+                      <SelectItem value={ALL_VALUE}>All</SelectItem>
                       {dropdownOptions[level]?.map((option) => (
                         <SelectItem key={option} value={option}>
                           {option}
@@ -130,3 +140,4 @@ export function LinkFinder() {
     </div>
   );
 }
+
