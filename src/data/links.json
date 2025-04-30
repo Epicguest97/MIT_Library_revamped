@@ -1,0 +1,83 @@
+[
+  {
+    "path": [
+      "2024",
+      "Dec 2023-Jan 2024",
+      "B.Tech",
+      "III Sem",
+      "ICT",
+      "IT"
+    ],
+    "name": "SOP IEEE 2023",
+    "url": "https://libportal.manipal.edu/MIT/Open%20Access/SOP_IEEE_2023.pdf"
+  },
+  {
+    "path": [
+      "2024",
+      "Dec 2023-Jan 2024",
+      "B.Tech",
+      "III Sem",
+      "ICT",
+      "IT"
+    ],
+    "name": "SOP RSC 2023",
+    "url": "https://libportal.manipal.edu/MIT/Open%20Access/SOP_RSC_2023.pdf"
+  },
+  {
+    "path": [
+      "2024",
+      "Dec 2023-Jan 2024",
+      "B.Tech",
+      "V Sem",
+      "CSE",
+      "Core"
+    ],
+    "name": "Advanced Algo",
+    "url": "https://example.com/pdf/adv_algo.pdf"
+  },
+    {
+    "path": [
+      "2024",
+      "Dec 2023-Jan 2024",
+      "B.Tech",
+      "V Sem",
+      "CSE",
+      "AI/ML"
+    ],
+    "name": "ML Course",
+    "url": "https://example.com/pdf/ml_course.pdf"
+  },
+   {
+    "path": [
+      "2024",
+      "June 2024-July 2024",
+      "M.Tech",
+      "I Sem",
+      "ECE"
+    ],
+    "name": "Digital Comm",
+    "url": "https://example.com/pdf/dig_comm.pdf"
+  },
+   {
+    "path": [
+      "2023",
+      "Dec 2022-Jan 2023",
+      "B.Tech",
+      "I Sem",
+      "Common"
+    ],
+    "name": "Physics Cycle",
+    "url": "https://example.com/pdf/physics.pdf"
+  },
+    {
+    "path": [
+      "2023",
+      "Dec 2022-Jan 2023",
+      "B.Tech",
+      "I Sem",
+      "Common"
+    ],
+    "name": "Chemistry Cycle",
+    "url": "https://example.com/pdf/chemistry.pdf"
+  }
+]
