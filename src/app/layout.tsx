@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className={cn(inter.variable, roboto_mono.variable)}>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased" // font-sans will now use Inter
+          "min-h-screen bg-black font-sans antialiased" // font-sans will now use Inter
         )}
       >
         {children}
