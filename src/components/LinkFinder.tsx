@@ -6,7 +6,7 @@ import { getUniquePathValues, filterLinks, getMaxPathDepth, getPathLevelLabel, A
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { List, Link as LinkIcon } from "lucide-react";
+import { List, Link as LinkIcon, ChevronLeft, ChevronRight } from "lucide-react";
 
 const ALL_VALUE = "__ALL__"; // Use a constant for the special value
 
@@ -22,6 +22,10 @@ export function LinkFinder() {
   // Search bar state
   const [subjectCodeQuery, setSubjectCodeQuery] = React.useState("");
   const [nameQuery, setNameQuery] = React.useState("");
+  
+  // Pagination state
+  const [currentPage, setCurrentPage] = React.useState(1);
+  const [itemsPerPage, setItemsPerPage] = React.useState(10);
 
 
   // Effect to calculate initial dropdown options and labels
@@ -116,10 +120,35 @@ export function LinkFinder() {
 
   const handleReset = () => {
     setSelectedPath(Array(maxDepth).fill(""));
+    setCurrentPage(1); // Reset to first page when filters are reset
   }
 
-   // Function to safely get a label, falling back if labels aren't loaded yet
-   const getLabel = (level: number) => levelLabels[level] || `Level ${level + 1}`;
+  // Function to safely get a label, falling back if labels aren't loaded yet
+  const getLabel = (level: number) => levelLabels[level] || `Level ${level + 1}`;
+  
+  // Calculate pagination values
+  const totalPages = Math.ceil(filteredLinks.length / itemsPerPage);
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = filteredLinks.slice(indexOfFirstItem, indexOfLastItem);
+  
+  // Pagination handlers
+  const goToNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+  
+  const goToPrevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+  
+  // Reset to first page when filters change
+  React.useEffect(() => {
+    setCurrentPage(1);
+  }, [subjectCodeQuery, nameQuery, JSON.stringify(selectedPath)]);
 
   return (
     <div className="flex flex-col md:flex-row gap-8 w-full max-w-5xl mx-auto p-4 min-h-screen bg-neutral-900 text-white rounded-xl shadow-2xl border border-neutral-800">
@@ -228,25 +257,76 @@ export function LinkFinder() {
           Results ({filteredLinks.length})
         </div>
         {filteredLinks.length > 0 ? (
-          <ul className="flex flex-col gap-3">
-            {filteredLinks.map((link, index) => (
-              <li key={index} className="p-0 bg-neutral-800/80 rounded-lg border border-neutral-700 shadow hover:bg-neutral-800 transition-colors">
-                <a
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-400 text-base hover:text-green-300 transition-colors"
+          <>
+            <ul className="flex flex-col gap-3">
+              {currentItems.map((link, index) => (
+                <li key={index} className="p-3 bg-neutral-800/80 rounded-lg border border-neutral-700 shadow hover:bg-neutral-800 transition-colors">
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-400 text-base hover:text-green-300 transition-colors"
+                  >
+                    {link.name || (link.url ? new URL(link.url).pathname.split('/').pop() : '') || 'Link'}
+                  </a>
+                  {link.path && link.path.length > 0 && (
+                    <div className="text-xs text-neutral-400 mt-0.5">
+                      {link.path.join(' / ')}
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ul>
+            
+            {/* Pagination Controls */}
+            <div className="flex flex-col md:flex-row md:items-center justify-between mt-6 border-t border-neutral-700 pt-4 gap-4">
+              <div className="flex items-center gap-4">
+                <div className="text-sm text-neutral-400">
+                  Showing {indexOfFirstItem + 1}-{Math.min(indexOfLastItem, filteredLinks.length)} of {filteredLinks.length} links
+                </div>
+                <Select
+                  value={itemsPerPage.toString()}
+                  onValueChange={(value) => {
+                    setItemsPerPage(Number(value));
+                    setCurrentPage(1); // Reset to first page when changing items per page
+                  }}
                 >
-                  {link.name || (link.url ? new URL(link.url).pathname.split('/').pop() : '') || 'Link'}
-                </a>
-                {link.path && link.path.length > 0 && (
-                  <div className="text-xs text-neutral-400 mt-0.5">
-                    {link.path.join(' / ')}
-                  </div>
-                )}
-              </li>
-            ))}
-          </ul>
+                  <SelectTrigger className="w-[110px] h-8 text-xs border-neutral-700 bg-neutral-800">
+                    <SelectValue placeholder="Per page" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="5">5 per page</SelectItem>
+                    <SelectItem value="10">10 per page</SelectItem>
+                    <SelectItem value="20">20 per page</SelectItem>
+                    <SelectItem value="50">50 per page</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="flex items-center gap-4">
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  onClick={goToPrevPage} 
+                  disabled={currentPage === 1}
+                  className="border-neutral-700 text-neutral-300 hover:bg-neutral-700"
+                >
+                  <ChevronLeft className="w-4 h-4 mr-1" /> Previous
+                </Button>
+                <div className="text-sm text-neutral-300">
+                  Page {currentPage} of {totalPages || 1}
+                </div>
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  onClick={goToNextPage} 
+                  disabled={currentPage >= totalPages}
+                  className="border-neutral-700 text-neutral-300 hover:bg-neutral-700"
+                >
+                  Next <ChevronRight className="w-4 h-4 ml-1" />
+                </Button>
+              </div>
+            </div>
+          </>
         ) : (
           <p className="text-neutral-400 italic">No links found matching your criteria.</p>
         )}
